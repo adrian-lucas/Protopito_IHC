@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/w3.css">
+    <link rel="icon" href="images/logofcyt.jpg">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/1139fa79ab.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <title>Facultad de Ciencia y Tecnología</title>
+
+</head>
+
+<body onload="fillTable()">
+    <header id="header" class="w3-red w3-display-container">
+        <div class="w3-xxlarge w3-container w3-center w3-display-middle	">
+            <h1>Facultad de Ciencias y Tecnologías</h1>
+        </div>
+    </header>
+    <div class="w3-mobile w3-bar w3-border">
+        <a class="w3-bar-item w3-button" onclick="cambiarPantalla('becas')">Becas</a>
+        <a class="w3-bar-item w3-button " onclick="cambiarPantalla('admisionRegular')">Admisión Regular</a>
+        <a class="w3-bar-item w3-button" onclick="cambiarPantalla('prepodeutico')">Curso Prepodéutico</a>
+        <a class="w3-bar-item w3-button" onclick="cambiarPantalla('especial')">Especial</a>
+    </div>
+    <div class="w3-container w3-border">
+        Inicio
+    </div>
+
+    <div id="admisionRegular" class="w3-row w3-margin">
+        <div class="w3-col m3 w3-container">
+            <div class="w3-container w3-center w3-border">
+                
+                    <h4 class="w3-red">Información</h4>
+                
+                <div class="w3-left w3-margin w3-button"  onclick="mostrarExamenesPasados()">
+                    <i class="fa-solid fa-sheet-plastic"></i>
+                    Exámenes Pasados
+                </div>
+                <br>
+                <div class="w3-left w3-margin w3-button" onclick="mostrarExamenIngreso()">
+                    <i class="fa-solid fa-pen-to-square" ></i>
+                    Exámen de Ingreso
+                </div>
+                <br>
+                <div class="w3-left w3-margin w3-button" onclick="mostrarCronograma()">
+                    <i class="fa-sharp fa-solid fa-calendar"></i>
+                    Cronograma
+                </div>
+            </div>
+        </div>
+        <div class="w3-col m9">
+            <div id="examenesPasados" class="" style="display: block">
+                <h3 class="w3-center">Exámenes Pasados</h3>
+                <table id="tablaExamenes" class="w3-table-all w3-text-black " >
+                    <thead>
+                      <tr class="w3-red">
+                        <th class="w3-center">Nro</th>
+                        <th>Tipo-Gestión</th>
+                        <th class="w3-center">Tamaño</th>
+                        <th class="w3-center">Descargar</th>
+                      </tr>
+                    </thead>
+
+                    
+                   
+                  </table>
+            </div>
+            <div id="examenIngreso" class="" style="display: none">
+                <h3 class="w3-center">Exámen Ingreso</h3>
+                <div class="w3-center">
+                    <img src="images/examenIngreso.png" alt="Imagen de Examen de Ingreso">
+                </div>
+            </div>
+            <div id="cronograma" class="" style="display: none">
+                <h3 class="w3-center">Cronograma</h3>
+                <div class="w3-center">
+                    <img src="images/cronogramaImg.png" alt="Imagen de Cronograma">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="becas" style="display: none">
+        <div class="w3-center">
+            <img src="images/becas.png" alt="">
+        </div>
+    </div>
+    <div id="prepodeutico" style="display: none">
+        <div class="w3-center">
+            <img src="images/propudeutico.png" alt="">
+        </div>
+    </div>
+    <div id="especial" style="display: none">
+        <div class="w3-center">
+            <img src="images/adminisionEspecial.jpg" alt="">
+        </div>
+    </div>
+    <br><br>
+    <footer class="w3-border w3-border-red">
+        
+        <div class="w3-left w3-padding">
+            <p>
+                Facultad de Ciencias y Tecnología (UMSS)
+            </p>
+        </div>
+        <div class="w3-right w3-padding">
+            <p>
+                Calle Sucre y parque La Torre <br>
+                Teléfono:591-4-4231765
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
